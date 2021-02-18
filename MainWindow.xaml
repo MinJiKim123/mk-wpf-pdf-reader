@@ -1,0 +1,27 @@
+﻿<Window x:Class="_300958687_kim__Lab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_300958687_kim__Lab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="310.694" Width="417.802">
+    <Grid>
+        <Label x:Name="usernameLbl" Content="Username : " HorizontalAlignment="Left" Margin="86,68,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="usernameTxt" HorizontalAlignment="Left" Height="23" Margin="166,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="pasLbl" Content="Password : " HorizontalAlignment="Left" Margin="90,116,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="passPbx" HorizontalAlignment="Left" Margin="167,119,0,0" VerticalAlignment="Top" Height="23" Width="153"/>
+        <Button x:Name="loginBtn" Content="Login" HorizontalAlignment="Left" Margin="152,173,0,0" VerticalAlignment="Top" Width="112" Height="34" Click="loginBtn_Click" FontWeight="Bold"/>
+        <Button x:Name="signupBtn" Content="Sign up" HorizontalAlignment="Left" Margin="152,223,0,0" VerticalAlignment="Top" Width="112" Height="30" Click="signupBtn_Click" FontWeight="Bold"/>
+        <Label x:Name="errorMsgLbl" Content="" HorizontalAlignment="Left" Margin="134,147,0,0" VerticalAlignment="Top" Width="186" Foreground="#FFFA1B1B" FontStyle="Italic"/>
+        <Label x:Name="welcomeLbl" Content="  eBookNerd" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top" Height="40" Width="165" FontSize="22" FontWeight="Bold" Foreground="#FFA13A3A">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFAE1E1"/>
+                    <GradientStop Color="#FFEDA9A9" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+
+    </Grid>
+</Window>
